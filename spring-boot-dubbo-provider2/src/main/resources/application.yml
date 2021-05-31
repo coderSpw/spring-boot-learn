@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dubbo-provider
+
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper://192.168.124.9:2181?backup=192.168.124.9:2182,192.168.124.19:2181
+  protocol:
+    port: 20881
+    name: dubbo
+  monitor:
+    protocol: registry
